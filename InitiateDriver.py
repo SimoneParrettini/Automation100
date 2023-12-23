@@ -4,9 +4,9 @@ from selenium.webdriver import Firefox
 def startBrowser():
     global driver
 
-    if (ConfigReader.readConfigData('Details','Browser')=="chrome"):
+    if (ConfigReader.readConfigData('Details','Browser')=="Chrome"):
         driver = Chrome()
-    elif (ConfigReader.readConfigData('Details','Browser')=="firefox"):
+    elif (ConfigReader.readConfigData('Details','Browser')=="Firefox"):
         driver = Firefox()
     else:
         driver = Chrome()
